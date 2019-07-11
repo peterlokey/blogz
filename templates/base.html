@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>{{title}}</title>
+        <link href="{{ url_for('static', filename='style.css')}}" type="text/css" rel="stylesheet">
+            <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap" rel="stylesheet">
+        </div>
+    </head>
+<header>
+    <span class="header-links">
+        <a href="/blog">Main Blog Page</a>
+        <a href="/new-post" id="create-link">Create A New Post</a>
+    </span>
+    <h1>Build-A-Blog</h1>
+</header>
+<body>
+
+
+
+    {% with messages = get_flashed_messages(with_categories=True) %}
+        <ul>
+        {% for category,message in messages %}
+            <li class="{{category}}">{{message}}</li>
+        {% endfor %}
+        </ul>   
+    {% endwith %}
+
+
+    {% block content %}
+    {% endblock %}
+
+</body>
+</html>

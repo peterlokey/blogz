@@ -1,0 +1,44 @@
+body {
+    background-color: rgb(231, 216, 195);
+    color: #373737;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+header {
+    background-color: #DCD0C0;
+}
+
+#create-link {
+    padding-left:2em
+}
+
+h1 {
+    color: #4e4e4e;
+    text-align: center
+}
+
+h2 {
+    color: rgb(206, 180, 95);
+    padding-left: 30px;
+}
+
+p{
+    padding-left: 30px;
+}
+
+a:link {
+    color: rgb(206, 180, 95);
+}
+
+a:visited {
+    color: rgb(206, 180, 95);
+}
+
+#text-input-box {
+    width: 300px;
+    height: 200px;
+}
+
+.error {
+    color:red;
+}
