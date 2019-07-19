@@ -1,0 +1,43 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<title>LogIn</title>
+</head>
+<body>
+    <h1>Log In to Blogz</h1>
+<form action="/login" method="post">
+    <table>
+        <tr>
+            <td>
+                <label for="username">Username</label>
+            </td>    
+            <td>
+                <input type="text" name="username" value="{{username}}" >
+            {% if username_error %}
+                <span class='error'>{{username_error}}</span>
+            {% endif %}
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="password">Password</label>
+            </td>
+            <td>
+                <input type="password" name="password">
+                {% if password_error %}
+                    <span class='error'>{{password_error}}</span>
+                {% endif %}
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="submit" value="Submit"/>
+            </td>
+        </tr>
+    </table>
+</form>
+
+
+
+
+{% endblock %}

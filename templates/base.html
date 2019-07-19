@@ -8,9 +8,16 @@
     </head>
 <header>
     <span class="header-links">
-        <a href="/blog">Main Blog Page</a>
+        <a href="/">Home</a>
+        <a href="/blog" id = "blog-link">Main Blog Page</a>
         <a href="/new-post" id="create-link">Create A New Post</a>
+    {% if 'username' in session %}
+        <a class='login-out-link' href="/logout">Log Out</a>
+    {% else %}
+        <a class='login-out-link' href='/login'>Log In</a>
+    {% endif %}
     </span>
+
     <h1>Build-A-Blog</h1>
 </header>
 <body>
