@@ -3,8 +3,7 @@
     <head>
         <title>{{title}}</title>
         <link href="{{ url_for('static', filename='style.css')}}" type="text/css" rel="stylesheet">
-            <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap" rel="stylesheet">
-        </div>
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap" rel="stylesheet">
     </head>
 <header>
     <span class="header-links">
@@ -13,7 +12,9 @@
         <a href="/new-post" id="create-link">Create A New Post</a>
     {% if 'username' in session %}
         <a class='login-out-link' href="/logout">Log Out</a>
+
     {% else %}
+        <a id='signup-link' href="/signup">Sign Up</a>
         <a class='login-out-link' href='/login'>Log In</a>
     {% endif %}
     </span>

@@ -8,15 +8,17 @@ header {
     background-color: #DCD0C0;
 }
 
-#home-link {
-    padding-left:2em;
-}
-
 #create-link {
     padding-left:2em;
 }
+
 #blog-link {
     padding-left: 2em;
+}
+
+#signup-link {
+    position: absolute;
+    right: 70px;
 }
 
 .login-out-link {
@@ -26,7 +28,7 @@ header {
 
 h1 {
     color: #4e4e4e;
-    text-align: center
+    text-align: center;
 }
 
 h2 {

@@ -3,8 +3,7 @@
 
 
 {% for user in users %}
-    <a href='/blog?user={{user.username}}'>{{ user.username }}</a>
-    <br>
+    <p><a href='/blog?user={{user.username}}'>{{ user.username }}</a></p>
 {% endfor %}
 
 {% endblock %}
